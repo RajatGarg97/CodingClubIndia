@@ -42,3 +42,4 @@ Vivek Pramanik (Jharkhand)
 Avirup Aditya(Kolkata)
 
 Soutrik Acharya(Kolkata)
+Vinay Kumar (Kolkata)
