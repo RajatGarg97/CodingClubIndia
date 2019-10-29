@@ -98,7 +98,6 @@ Abhiroop Agarwal (Agra, U.P.)
 Prashant Sharma (DTU, delhi)
 
 
-
 Anikash Chakraborty(DTU,Delhi)
 
 
@@ -107,9 +106,14 @@ Vandit Khurana (Haryana)
 
 Ananthu Ajay
 
+
 Anmol Agarwal (Lucknow)
 
+
 karan bajaj(jaipur)
+
+
+Shreyas S(Bangalore)
 
 
 Kshitiz Kamal (Jaipur)
