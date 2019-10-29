@@ -108,4 +108,4 @@ Anmol Agarwal (Lucknow)
 
 karan bajaj(jaipur)
 
-Shreyas S(Bengaluru)
+Shreyas S(Bangalore)
