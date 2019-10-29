@@ -92,6 +92,9 @@ Sandeep Maithani(DIT,Dehradun)
 Nishant Kumar (Jharkhand)
 
 
+Abhiroop Agarwal (Agra, U.P.)
+
+
 Prashant Sharma (DTU, delhi)
 
 
@@ -108,4 +111,11 @@ Anmol Agarwal (Lucknow)
 
 karan bajaj(jaipur)
 
+
 Kshitiz Kamal (Jaipur)
+
+
+Parvathi J Nair (Kerala)
+
+
+Ashish Ranjan(PEC chandigarh)
