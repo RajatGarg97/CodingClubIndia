@@ -104,8 +104,6 @@ Anikash Chakraborty(DTU,Delhi)
 Vandit Khurana (Haryana)
 
 
-
-
 Ananthu Ajay
 
 
@@ -131,6 +129,9 @@ Parvathi J Nair (Kerala)
 
 
 Ashish Ranjan(PEC chandigarh)
+
+
+Aditya Jadhav (Pune)
 
 
 Parth Gulati (Delhi)
