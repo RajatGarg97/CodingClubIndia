@@ -113,6 +113,9 @@ Anmol Agarwal (Lucknow)
 karan bajaj(jaipur)
 
 
+Nishant Mittal (Delhi)
+
+
 Lakshmanan R(Tamil Nadu)
 
 
@@ -129,3 +132,12 @@ Ashish Ranjan(PEC chandigarh)
 
 
 Aditya Jadhav (Pune)
+
+
+Parth Gulati (Delhi)
+
+
+Moahmmed Asfak(Chennai) 
+
+
+Dhruv Sondhi (DTU,Delhi)
