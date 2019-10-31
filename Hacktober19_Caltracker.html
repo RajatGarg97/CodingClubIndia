@@ -1,0 +1,384 @@
+<style>
+.whole{					/*Whole screen*/
+	display:flex;
+  	background-color: white;
+	height:100%;
+	
+}
+
+.part1 {				/*Whole bg for the form*/
+
+  	flex-wrap: nowrap;
+  	background-color: lightgrey;
+  	width:500px;
+	align-items:left;
+	border-radius: 20px;	
+	position:left;
+    font-size:em;
+    box-shadow: 0 0 50px black;
+	height:100%; 
+	margin-left:100px;
+	justify-content:center;
+	align-items:center;
+}
+
+.output{			/*table n other output*/
+
+background-color:palegreen;
+width:400px;
+position:relative;
+left:500px;
+height:100%;
+}
+
+
+/* .part2 {
+
+  	flex-wrap: nowrap;
+  	background-color: skyblue;
+  	width:500px;
+	border-radius: 20px;	
+	position: relative;
+	left:50px;
+        font-size:1em;
+        box-shadow: 0 0 50px midnightblue;
+	height:600px;	
+	margin-top:100px;
+	justify-content:center;
+	align-items:center;
+} */
+
+
+.sm_output{
+background-color:palegreen;
+width:300px;
+border-radius: 20px;
+margin:50px;
+height:400px;
+align-items:left;
+box-shadow: 0 0 50px black;
+}
+
+.inpdes {		/*BlankHolders*/
+  height: 1.25em;
+  width: 50%;
+  margin: 10px;
+   border: 1px solid;
+  border-radius: 3px;
+  font-size:.75em;
+
+}
+
+input {				/*Blanks*/
+
+  font-size: .75em;
+}
+
+
+table, th, td {		/*Table*/
+  border: 1px solid black;
+	margin:50px;
+	text-align:center;
+
+}
+
+.indes{				/*Buttons*/
+  width:30%;
+  height:1.5em;
+  margin:10px;
+  font-size:.75em;
+  border:1px dashed;
+  border-radius:4px;	
+color:white;
+   	background-color: black;
+}
+
+.formfill{			/*Full Form*/
+font-size:1.25em;
+}
+
+.text{			/*ouput table*/
+
+margin:20px;
+}
+
+</style>
+
+
+<html>
+
+<body class="whole" style="text-align:center">
+
+
+<span class="part1">
+<form name="data" id="data" method="post" class="formfill"><br><br>
+
+  Age:<input type="number"  class="inpdes" name="Age" id="Age" ><br><br>
+  Height:<input type="number" class="inpdes" name="ht" id="ht"><br><br>
+  Weight:<input  type="number" class="inpdes" name="wt" id="wt"><br><br>
+  Gender:<input type="radio" name="gdr" id="gdrm" checked>Male
+             
+                  <input type="radio" name="gdr" id="gdrf">Female
+<br><br>
+  How do you about your physical activity<select class="inpdes" id="PA" value="">
+	<option value="0">BMR</option>
+	<option value="1">Sedentary</option>
+	<option value="2">Less active</option>
+	<option value="3">Active</option>
+	<option value="4">very active</option></select><br><br>
+Water Intake(in ml):<input  class="inpdes" name="water" id="water" ><br >
+	<input type="button"  class="indes" value="SUBMIT" onclick="myform()">
+</form>
+<!-- </span>
+<span class="part1"> -->
+<form name="data2" id="data2" method="post" class="formfill">
+<br><br>
+Name of the Item:<input type="text"  class="inpdes"  id="fooditem" value=""><br><br>
+Calorie content:<input type="number"  class="inpdes"  id="calorie" value=""><br><br>
+Fat content:<input type="number"  class="inpdes" id="fat" value=""><br><br>
+Carbohydrate content:<input type="number" class="inpdes"  id="carb" value=""><br><br>
+Protein content:<input type="number" class="inpdes"  id="protein" value=""><br><br>
+<input type="button" class="indes"  value="ADD" onclick="sheet()">
+
+</form>
+
+</span>
+<script >
+	var val1=0,val2=0;
+
+function myform(){	
+        let a=parseInt(document.getElementById("Age").value);
+	let ht=parseInt(document.getElementById("ht").value);
+	let wt=parseInt(document.getElementById("wt").value);
+	let gr=document.getElementById("gdrm").checked;
+	let pa=parseInt(document.getElementById("PA").value);
+        let water=parseInt(document.getElementById("water").value);
+
+
+console.log(a);
+console.log(ht);
+
+/*function Write(msg){
+	var chat = document.getElementById("disp1");
+        var y = document.createElement("div");  
+	y.textContent = msg;        
+	chat.appendChild(y);
+
+}*/
+	if(water<2000){
+	alert("Still a lot more to drink for the day");
+	}
+
+
+	if(gr){
+             val1 = 88.362 + 13.397 * wt + 4.799 * ht - 5.677 * a;
+	     document.getElementById("disp1").innerHTML =val1;
+	    //document.write("<br>");
+             document.getElementById("disp3").innerHTML = pa;
+		console.log(gr);
+console.log(pa);
+    	document.getElementById("disp").innerHTML ='<a href="./calupdated.html"><button>Check Again</button></a>';
+ 	}
+        else{ 
+               val2= 447.593 + 9.247 * wt + 3.098 *  ht - 4.330 * a;
+		document.getElementById("disp1").innerHTML = val2;
+               //document.write("<br>");
+               document.getElementById("disp3").innerHTML = pa;
+	console.log(gr);
+	console.log(pa);
+
+    	document.getElementById("disp").innerHTML ='<a href="./calupdated.html"><button>Check Again</button></a>';
+	}	     
+
+
+}
+
+
+//localStorage.clear();
+ 
+function Write1(msg1){
+	var chat = document.getElementById("dip1");
+	var y = document.createElement("div"); 
+	y.textContent = msg1;        
+	chat.appendChild(y);
+
+}
+
+function Write2(msg2){
+	var chat = document.getElementById("dip2");
+	var y = document.createElement("div"); 
+	y.textContent = msg2;        
+	chat.appendChild(y);
+
+}
+
+function Write3(msg3){
+	var chat = document.getElementById("dip3");
+	var y = document.createElement("div"); 
+	y.textContent = msg3;        
+	chat.appendChild(y);
+
+}
+
+function Write4(msg4){
+	var chat = document.getElementById("dip4");
+	var y = document.createElement("div"); 
+	y.textContent = msg4;        
+	chat.appendChild(y);
+
+}
+
+function Write5(msg5){
+	var chat = document.getElementById("dip5");
+	var y = document.createElement("div"); 
+	y.textContent = msg5;        
+	chat.appendChild(y);
+
+}
+	var i=0;
+	var tot_cal=0;
+	var Itar=[];
+	var Caar=[];	
+	var Far=[];
+	var Cbar=[];
+	var pro=[];
+	var h=0;
+	var j=1;
+
+function sheet(){
+
+
+
+
+ 	var a=new Object();
+    	a.food=document.getElementById("fooditem").value;
+    	a.cal=document.getElementById("calorie").value;
+    	a.fat=document.getElementById("fat").value;
+    	a.carb=document.getElementById("carb").value;
+    	a.pro=document.getElementById("protein").value;
+
+        for(var h=0;h<50;h++){
+        	Itar.push(h*2);
+        	Caar.push(2*h+1);
+		Far.push(100+ 2*h);
+		Cbar.push(1000+ 2*h);	
+		pro.push(500+ 2*h)
+	}
+
+	/*if(i===0){
+
+    	localStorage.setItem(Itar[0],a.food);
+	localStorage.setItem(Caar[0],a.cal);
+	i++;
+    	localStorage.setItem("ui",i);
+	}  
+	else
+	{*/	
+		
+	if(i===0){
+		localStorage.setItem(Itar[i],0);
+    	localStorage.setItem(Caar[i],0);
+    	localStorage.setItem(Far[i],0);
+    	localStorage.setItem(Cbar[i],0);
+    	localStorage.setItem(pro[i],0);
+	
+		i++;
+    	localStorage.setItem("ui",i);
+	}
+	i=localStorage.getItem("ui");
+	if(i>0){
+	
+    	localStorage.setItem(Itar[i],a.food);
+    	localStorage.setItem(Caar[i],a.cal);
+    	localStorage.setItem(Far[i],a.fat);
+    	localStorage.setItem(Cbar[i],a.carb);
+    	localStorage.setItem(pro[i],a.pro);
+	
+		i++;
+    	localStorage.setItem("ui",i);
+	}
+	
+	//}
+	/*if(j===0){
+		localStorage.getItem(Itar[j]);
+        localStorage.getItem(Caar[j]);
+        localStorage.getItem(Far[j]);
+		localStorage.getItem(Cbar[j]);
+		localStorage.getItem(pro[j]);
+
+	}
+*/
+	
+		for(;j<i;j++){
+
+			Write1(localStorage.getItem(Itar[j]));
+        	Write2(localStorage.getItem(Caar[j]));
+        	Write3(localStorage.getItem(Far[j]));
+			Write4(localStorage.getItem(Cbar[j]));
+			Write5(localStorage.getItem(pro[j]));
+
+
+		}
+	
+	document.getElementById("display2").innerHTML ="click add more to add more food items or press button click";
+
+
+    	// document.getElementById("display3").innerHTML ='<br><a href="./maintest.html">Add more</a><br>';
+	document.getElementById("display4").innerHTML ='<br><button onclick="total()">Total</button><br>';
+
+
+
+
+}
+
+
+function total(form){
+	tot_cal=0;
+	for(var h=1;h<i;h++){
+     		tot_cal=tot_cal+parseInt(localStorage.getItem(Caar[h]),10);
+    	}
+
+	document.getElementById("display").innerHTML =tot_cal;
+if(val1>0 && tot_cal<val1){
+	
+	document.getElementById("comment").innerHTML ="com'on man still a bit cal left";
+
+}
+else if(val2>0 && tot_cal<val2){
+	document.getElementById("comment").innerHTML ="com'on  still a bit cal left";
+}
+else 
+document.getElementById("comment").innerHTML ="done for the day";
+}
+</script>
+
+
+<span class="output">
+	<p id="disp1" class="text" style="float:left" ></p>
+	<p id="disp3" class="text" style="float:left" ></p>
+	<p id="disp" class="text" style="float:left" ></p>
+	<p id="disp2" class="text" style="float:left" ></p>	
+<table >
+  <tr>
+    <th>Item</th>
+    <th>Calorie</th> 
+    <th>Fat</th>
+    <th>Carbohydrate</th>
+    <th>Protein</th>
+  </tr>
+  <tr>
+    <td><p id="dip1"  ></p></td>
+    <td><p id="dip2"  ></p></td>
+    <td><p id="dip3"  ></p></td>
+    <td><p id="dip4"  ></p></td>
+    <td><p id="dip5"  ></p></td>
+  </tr>
+</table>
+	<p id="display2" class="text"  ></p>
+	<p id="display3" class="text"></p>
+	<p id="display4" class="text" ></p>
+	<p id="display" class="text"  ></p>
+	<p id="comment" class="text"></p>
+</span>
+</body>
+</html>
