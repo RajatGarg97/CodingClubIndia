@@ -11,6 +11,8 @@ Guys, first wait for your pull request to be merged here and then proceed with y
 otherwise all your commits would be concatenated into a single PR.  
  
  ---------------------------------------------------------------------------------
+SHREYA NIGAM (ALLAHABAD)
+
 SAI TARUN PALAKULA(Andhra Pradesh)
 
 Vaibhav (Haryana)
